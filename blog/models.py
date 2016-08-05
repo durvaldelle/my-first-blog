@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.core.urlresolvers import reverse
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
